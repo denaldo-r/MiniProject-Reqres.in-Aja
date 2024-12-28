@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Welcome Back | Login";
+    document.title = "Login | Reqres.in Aja";
   }, []);
 
   const handleChange = (e) => {
@@ -27,7 +27,7 @@ const Login = () => {
       const res = await axios.post("https://reqres.in/api/login", form);
       localStorage.setItem("token", res.data.token);
       setSuccess("Welcome back!");
-      setTimeout(() => navigate("/HomeScreen"), 1500);
+      setTimeout(() => navigate("/OurUser"), 1500);
     } catch (err) {
       setError("Invalid email or password. Please try again.");
     } finally {
@@ -41,7 +41,7 @@ const Login = () => {
       <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center text-gray-700">Login</h2>
         <p className="text-center text-gray-500">
-          Welcome back! Please log in.
+          To see further, Please log in.
         </p>
 
         {error && (
@@ -112,6 +112,14 @@ const Login = () => {
           >
             Sign Up
           </Link>
+          <div className="mt-6 text-center">
+            <Link
+              to="/"
+              className="text-sm text-gray-500 transition duration-200 hover:text-purple-600"
+            >
+              Back to Homepage
+            </Link>
+          </div>
         </p>
       </div>
     </div>
