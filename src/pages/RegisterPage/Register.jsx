@@ -16,7 +16,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Join Us | Register";
+    document.title = "Register | Reqres.in Aja";
   }, []);
 
   const handleChange = (e) => {
@@ -59,7 +59,7 @@ const Register = () => {
           Create Your Account
         </h2>
         <p className="mb-6 text-sm text-center text-gray-500">
-          Join us and explore new opportunities.
+          Join us and explore
         </p>
 
         {error && (

@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Welcome Back | Login";
+    document.title = "Login | Reqres.in Aja";
   }, []);
 
   const handleChange = (e) => {
@@ -41,7 +41,7 @@ const Login = () => {
       <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center text-gray-700">Login</h2>
         <p className="text-center text-gray-500">
-          Welcome back! Please log in.
+          To see further, Please log in.
         </p>
 
         {error && (
