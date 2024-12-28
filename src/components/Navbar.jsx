@@ -6,19 +6,19 @@ const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    // Check if the user is logged in based on the presence of a token in localStorage
+    // Check if the user is logged in based on the token in localStorage
     const token = localStorage.getItem("token");
     setIsLoggedIn(!!token);
   }, []);
 
   const handleLogout = () => {
-    localStorage.clear(); // Clear all stored data (e.g., token)
-    setIsLoggedIn(false); // Update the state
-    navigate("/"); // Redirect to the home page
+    localStorage.clear(); // Clear all stored data (token)
+    setIsLoggedIn(false);
+    navigate("/");
   };
 
   const handleLogin = () => {
-    navigate("/login"); // Redirect to the login page
+    navigate("/login");
   };
 
   return (
