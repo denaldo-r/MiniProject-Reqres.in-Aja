@@ -40,7 +40,7 @@ const HomeScreen = () => {
   };
 
   useEffect(() => {
-    document.title = "Home | Reqres.in Aja";
+    document.title = "Our Users | Reqres.in Aja";
     getUsers();
   }, []);
 
