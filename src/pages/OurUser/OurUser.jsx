@@ -56,7 +56,7 @@ const HomeScreen = () => {
           Welcome Reqres.in Aja!
         </h1>
         <p className="mt-4 mb-8 text-lg text-center text-white opacity-80">
-          Berikut ini adalah anggota kami
+          Here are our members
         </p>
         <div className="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {users.map((user) => (

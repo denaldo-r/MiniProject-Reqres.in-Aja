@@ -40,10 +40,10 @@ const Register = () => {
       };
       const res = await axios.post("https://reqres.in/api/register", payload);
 
-      setSuccess("Account successfully created!");
+      setSuccess("Account successfully created! Redirected to login page");
       setTimeout(() => {
-        navigate("/register");
-      }, 1500);
+        navigate("/login");
+      }, 2000);
     } catch (error) {
       setError(error.response?.data?.error || "Something went wrong!");
     } finally {
@@ -128,7 +128,7 @@ const Register = () => {
         <div className="mt-6 text-center text-gray-600">
           <p>
             Already have an account?{" "}
-            <Link to="/" className="text-purple-600 hover:underline">
+            <Link to="/login" className="text-purple-600 hover:underline">
               Sign In
             </Link>
           </p>

@@ -27,7 +27,7 @@ const Login = () => {
       const res = await axios.post("https://reqres.in/api/login", form);
       localStorage.setItem("token", res.data.token);
       setSuccess("Welcome back!");
-      setTimeout(() => navigate("/HomeScreen"), 1500);
+      setTimeout(() => navigate("/OurUser"), 1500);
     } catch (err) {
       setError("Invalid email or password. Please try again.");
     } finally {
@@ -112,6 +112,14 @@ const Login = () => {
           >
             Sign Up
           </Link>
+          <div className="mt-6 text-center">
+            <Link
+              to="/"
+              className="text-sm text-gray-500 transition duration-200 hover:text-purple-600"
+            >
+              Back to Homepage
+            </Link>
+          </div>
         </p>
       </div>
     </div>
