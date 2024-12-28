@@ -49,7 +49,7 @@ const UserDetails = () => {
             </h2>
             <p className="mt-2 text-gray-600">{user.email}</p>
             <p className="mt-4 text-gray-500">ID: {user.id}</p>
-            <Link to="/HomeScreen">
+            <Link to="/OurUser">
               <button className="px-6 py-2 mt-6 font-semibold tracking-wider text-white transition-all duration-300 transform bg-indigo-600 border-2 border-indigo-600 rounded-full hover:bg-transparent hover:text-indigo-600 hover:scale-110">
                 Back to Users
               </button>

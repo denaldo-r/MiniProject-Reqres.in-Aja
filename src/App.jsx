@@ -8,6 +8,7 @@ import Users from "./pages/OurUser/OurUser";
 import UserDetails from "./pages/UserDetails.jsx/UserDetails";
 import LandingPages from "./pages/LandingPages/LandingPages";
 import ProtectedRoute from "./routes/ProtectedRoute";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,15 +24,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        <Route
-          path="/user/:id"
-          element={
-            <ProtectedRoute>
-              <UserDetails />
-            </ProtectedRoute>
-          }
-        />
-
+        <Route path="/user/:id" element={<UserDetails />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

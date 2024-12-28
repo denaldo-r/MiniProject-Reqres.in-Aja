@@ -3,6 +3,7 @@ import bgImage from "../../assets/bg.svg";
 import devicesImage from "../../assets/devices.svg";
 import appStoreImage from "../../assets/App Store.svg";
 import playStoreImage from "../../assets/Play Store.svg";
+import Navbar from "../../components/Navbar";
 
 const LandingPages = () => {
   const currentYear = new Date().getFullYear();
